@@ -114,7 +114,7 @@
             isNicknameValid = true; 
             return; 
         }
-
+            //Bloque terminado
         try {
             const response = await fetch("{% url 'validate_nickname' %}?nick_name=" + encodeURIComponent(nick_name), {
                 method: 'GET',
